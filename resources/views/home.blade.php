@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <div class="nav navbar-nav">
                         <a class="nav-link text-secondary me-3" aria-current="page" href="#">Home</a>
-                        <a class="nav-link text-secondary mx-3" href="#">About</a>
+                        <a class="nav-link text-secondary mx-3" href="/about">About</a>
                         <a class="nav-link text-secondary mx-3" href="#">Blog</a>
                         <a class="nav-link text-success mx-3 active" href="#">Contact</a>
                         <button type="button" class="btn btn-success btn-lg fs-6 ms-3" style="border-radius: 15px">Sign
@@ -42,7 +42,7 @@
     {{-- End of Navbar --}}
     {{-- Jumbotron --}}
     <section class="jumbotron">
-        <div class="container my-5">
+        <div class="container py-5" style="height: 538px">
             <div class="row g-0">
                 <div class="col-5 my-auto">
                     <div class="content mb-4">
@@ -62,10 +62,27 @@
                 </div>
             </div>
         </div>
-
-        {{-- <div class="row"></div> --}}
     </section>
     {{-- End of Jumbotron --}}
+    {{-- Footer --}}
+    <div class="container-fluid bg-success rounded-bottom rounded-pill" style="height: 100px">
+        {{-- <div class="row justify-content-around">
+            <div class="col">
+                WhatsApp
+            </div>
+            <div class="col">
+                Email
+            </div>
+            <div class="col">
+                Instagram
+            </div>
+            <div class="col">
+                Facebook
+            </div>
+        </div> --}}
+        <p class="container text-center py-3 text-white">© 2021 Clinic Bimbel. All Rights Reserved</p>
+    </div>
+    {{-- End of Footer --}}
 
     <!-- Optional JavaScript; choose one of the two! -->
 
