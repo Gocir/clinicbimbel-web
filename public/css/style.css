@@ -3,17 +3,105 @@ body {
     font-family: "Source Sans Pro", sans-serif;
 }
 
+hr {
+    height: 2px;
+    border: 1.5px solid #28a745;
+    border-radius: 20%;
+}
+
+.jumbotron .row {
+    height: 100%;
+}
+
 .jumbotron p {
     font-family: "Poppins", sans-serif;
-    margin: auto;
 }
 
-.jumbotron .content .title {
-    font-size: 80px;
-    font-weight: bold;
+.btn {
+    border-radius: 15px;
 }
 
-.jumbotron .content .sub-title {
-    font-size: 30px;
-    font-weight: bold;
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1400px) {
+    .jumbotron {
+        height: 533px;
+    }
+}
+
+/* @media screen and (max-width: 1366px) {
+    .jumbotron {
+        height: 537px;
+    }
+} */
+
+@media screen and (max-width: 1200px) {
+    .jumbotron {
+        height: 1263px;
+    }
+
+    .cta .btn {
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: 1rem;
+    }
+}
+
+/* @media only screen and (min-device-width: 576px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    @media screen and (max-width: 1024px) {
+    .jumbotron {
+        height: 563px;
+    }
+} */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    /* @media screen and (max-width: 1024px) { */
+    .jumbotron {
+        height: 563px;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .jumbotron {
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+}
+
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .jumbotron {
+        height: 755px;
+    }
+} */
+
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        height: 939px;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .cta {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    .jumbotron {
+        height: 755px;
+    }
+
+    .cta .btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        border-radius: 0.2rem;
+    }
 }
