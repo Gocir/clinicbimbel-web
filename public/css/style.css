@@ -1,6 +1,6 @@
 body {
     background-color: #fafafa;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 hr {
@@ -13,12 +13,15 @@ hr {
     height: 100%;
 }
 
-.jumbotron p {
-    font-family: "Poppins", sans-serif;
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Lora", serif;
 }
 
 .btn {
-    border-radius: 15px;
+    border-radius: 12px;
 }
 
 footer a {
@@ -27,9 +30,9 @@ footer a {
 }
 
 @media screen and (max-width: 1400px) {
-    .jumbotron {
+    /* .jumbotron {
         height: 533px;
-    }
+    } */
 }
 
 /* @media screen and (max-width: 1366px) {
@@ -59,7 +62,6 @@ footer a {
 } */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    /* @media screen and (max-width: 1024px) { */
     .jumbotron {
         height: 563px;
     }
