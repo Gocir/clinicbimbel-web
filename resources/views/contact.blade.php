@@ -4,28 +4,34 @@
     {{-- Jumbotron --}}
     <div class="container">
         <section class="sosmed my-5">
-            <div class="row justify-content-center text-center">
+            <div class="row justify-content-between text-center">
                 <div class="col-md-2">
-                    <a href="https://www.facebook.com/clinicbimbel/" class="text-success display-4"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <h5 class="fw-bold mt-2">Facebook</h5>
-                    <p>Clinic Bimbel</p>
+                    <a href="https://www.facebook.com/clinicbimbel/" class="text-decoration-none text-dark">
+                        <i class="fab fa-facebook-f text-success display-4"></i>
+                        <h5 class="fw-bold mt-2">Facebook</h5>
+                        <p>Clinic Bimbel</p>
+                    </a>
                 </div>
                 <div class="col-md-2">
-                    <a href="https://www.instagram.com/clinicbimbel/" class="text-success display-4"><i
-                            class="fab fa-instagram"></i></a>
-                    <h5 class="fw-bold mt-2">Instagram</h5>
-                    <p>@clinicbimbel</p>
+                    <a href="https://www.instagram.com/clinicbimbel/" class="text-decoration-none text-dark">
+                        <i class="fab fa-instagram text-success display-4"></i>
+                        <h5 class="fw-bold mt-2">Instagram</h5>
+                        <p>@clinicbimbel</p>
+                    </a>
                 </div>
                 <div class="col-md-2">
-                    <a href="http://wa.me/6283101065180" class="text-success display-4"><i class="fab fa-whatsapp"></i></a>
-                    <h5 class="fw-bold mt-2">WhatsApp</h5>
-                    <p>+62 831-0106-5180</p>
+                    <a href="http://wa.me/6283101065180" class="text-decoration-none text-dark">
+                        <i class="fab fa-whatsapp text-success display-4"></i>
+                        <h5 class="fw-bold mt-2">WhatsApp</h5>
+                        <p>+62 831-0106-5180</p>
+                    </a>
                 </div>
-                <div class="col-md-2">
-                    <a href="#" class="text-success display-4"><i class="far fa-envelope"></i></a>
-                    <h5 class="fw-bold mt-2">Email</h5>
-                    <p>admin@clinicbimbel.com</p>
+                <div class="col-md-3">
+                    <a href="#" class="text-decoration-none text-dark">
+                        <i class="far fa-envelope text-success display-4"></i>
+                        <h5 class="fw-bold mt-2">Email</h5>
+                        <p>admin@clinicbimbel.com</p>
+                    </a>
                 </div>
             </div>
         </section>
