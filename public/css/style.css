@@ -3,15 +3,70 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+.navbar {
+    background-color: #185529;
+}
+
+.navbar-brand img {
+    width: 80px;
+}
+
+.btn-login {
+    background-color: #ffc800;
+    color: #185529;
+}
+
+.cta .btn-fb {
+    background-color: #3b5998;
+}
+
+.cta .btn-ig {
+    background-image: linear-gradient(
+        225deg,
+        #405de6,
+        #5851db,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d
+    );
+}
+
+.cta .btn-wa {
+    background-color: #25d366;
+}
+
+.cta .btn-yt {
+    background-color: #ff0000;
+}
+
 hr {
     height: 2px;
     border: 1.5px solid #28a745;
     border-radius: 20%;
 }
 
-.jumbotron .row {
+.cover-home .row {
+    height: 100%;
+    background-image: linear-gradient(35deg, #185529 50%, #69a131);
+}
+
+.jumbotron-maintenance {
     height: 100%;
 }
+
+.mapel hr {
+    border: 2px solid #68b6de;
+    border-radius: 15%;
+}
+
+/* .why {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0),
+        rgba(40, 167, 69)
+    );
+} */
 
 h1,
 h2,
@@ -21,28 +76,21 @@ h4 {
 }
 
 .btn {
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
-footer a {
-    text-decoration: none;
-    color: white;
+.map iframe {
+    height: 500px;
 }
 
 @media screen and (max-width: 1400px) {
-    /* .jumbotron {
-        height: 533px;
-    } */
+    .map iframe {
+        height: 500px;
+    }
 }
 
-/* @media screen and (max-width: 1366px) {
-    .jumbotron {
-        height: 537px;
-    }
-} */
-
 @media screen and (max-width: 1200px) {
-    .jumbotron {
+    .cover-home {
         height: 1263px;
     }
 
@@ -52,42 +100,46 @@ footer a {
         line-height: 1.5;
         border-radius: 1rem;
     }
-}
 
-/* @media only screen and (min-device-width: 576px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    @media screen and (max-width: 1024px) {
-    .jumbotron {
-        height: 563px;
+    .map iframe {
+        height: 100%;
     }
-} */
+}
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    .jumbotron {
+    .navbar-brand {
+        width: 200px;
+    }
+
+    .jumbotron-maintenance {
         height: 563px;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .jumbotron {
-        height: 900px;
+@media only screen and (min-device-width: 1112px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .navbar-brand {
+        width: 250px;
+    }
+
+    .jumbotron-maintenance {
+        height: 850px;
     }
 }
-
-@media screen and (max-width: 992px) {
-}
-
-/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .jumbotron {
-        height: 755px;
-    }
-} */
 
 @media screen and (max-width: 768px) {
-    .jumbotron {
+    .navbar-brand {
+        width: 140px;
+    }
+
+    .cover-home {
         height: 939px;
     }
 
-    .content {
+    .title-maintenance {
+        text-align: center;
+    }
+
+    .title-welcome {
         text-align: center;
     }
 
@@ -95,9 +147,10 @@ footer a {
         text-align: center;
     }
 }
+
 @media screen and (max-width: 576px) {
-    .jumbotron {
-        height: 755px;
+    .jumbotron-maintenance {
+        height: 655px;
     }
 
     .cta .btn {
@@ -105,5 +158,9 @@ footer a {
         font-size: 0.875rem;
         line-height: 1.5;
         border-radius: 0.2rem;
+    }
+
+    .map iframe {
+        height: 300px;
     }
 }
