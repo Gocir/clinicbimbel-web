@@ -18,11 +18,13 @@
 
 <body>
     {{-- Navbar --}}
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent rounded" aria-label="Eleventh navbar example">
-            <div class="container-fluid">
-                <a class="navbar-brand mx-lg-auto" style="width: 240px" href="/">
-                    <img src="/img/Logo.png" class="w-50" alt="">
+    {{-- <div class="container"> --}}
+    <header class="mb-auto">
+        <nav class="navbar navbar-expand-lg navbar-dark border-bottom border-warning border-3 shadow"
+            aria-label="Eleventh navbar example">
+            <div class="container">
+                <a class="navbar-brand mx-lg-auto" href="/">
+                    <img src="/img/logo.svg" alt="">
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
@@ -33,24 +35,42 @@
                 <div class="navbar-collapse collapse justify-content-lg-end" id="navbarsExample09" style="">
                     <ul class="navbar-nav m-3 m-lg-0 fs-6">
                         <li class="nav-item mx-lg-3">
-                            <a class="nav-link" aria-current="page" href="/">Beranda</a>
+                            <a class="nav-link btn btn-sm btn-light" aria-current="page" href="/"><img
+                                    src="/icons/home.svg" class="ic-home" alt=""></i></a>
                         </li>
-                        <li class="nav-item mx-lg-3">
-                            <a class="nav-link" href="/maintenance">Tentang Kami</a>
+                        <li class="nav-item dropdown mx-lg-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Program
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Private</a></li>
+                                <li><a class="dropdown-item" href="#">Kelas</a></li>
+                                <li><a class="dropdown-item" href="#">Online</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-lg-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pendaftaran
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Siswa</a></li>
+                                <li><a class="dropdown-item" href="#">Tentor</a></li>
+                                <li><a class="dropdown-item" href="#">Freelancer</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item mx-lg-3">
                             <a class="nav-link" href="/maintenance">Blog</a>
                         </li>
-                        <li class="nav-item mx-lg-3">
-                            <a class="nav-link" href="/contact">Hubungi Kami</a>
-                            {{-- <hr class="m-0 mx-lg-auto"> --}}
                         </li>
                     </ul>
-                    <a href="#" class="btn btn-info text-light btn-lg fs-6 m-3 m-lg-0 ms-lg-5">Daftar</a>
+                    <a href="#" class="btn btn-login btn fw-bold m-3 m-lg-0 ms-lg-5">Masuk/Daftar</a>
                 </div>
             </div>
         </nav>
-    </div>
+    </header>
+    {{-- </div> --}}
     {{-- End of Navbar --}}
     {{-- Content --}}
     <div class="content">
@@ -58,8 +78,8 @@
     </div>
     {{-- End of Content --}}
     {{-- Footer --}}
-    <footer>
-        <p class="text-center text-dark-50 py-5 mb-0">&copy; 2021 Clinic Bimbel. All Rights Reserved</p>
+    <footer class="mt-auto text-center text-dark-50 py-3">
+        <p class="mb-0">&copy; 2021 Clinic Bimbel. All Rights Reserved</p>
     </footer>
     {{-- End of Footer --}}
 
