@@ -20,7 +20,7 @@
     {{-- Navbar --}}
     {{-- <div class="container"> --}}
     <header class="mb-auto">
-        <nav class="navbar navbar-expand-lg navbar-dark border-bottom border-warning border-3 shadow"
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top border-bottom border-warning border-3 shadow"
             aria-label="Eleventh navbar example">
             <div class="container">
                 <a class="navbar-brand mx-lg-auto" href="/">
@@ -65,7 +65,7 @@
                         </li>
                         </li>
                     </ul>
-                    <a href="#" class="btn btn-login btn fw-bold m-3 m-lg-0 ms-lg-5">Masuk/Daftar</a>
+                    <a href="#" class="btn btn-action btn fw-bold m-3 m-lg-0 ms-lg-5">Masuk/Daftar</a>
                 </div>
             </div>
         </nav>
