@@ -22,5 +22,5 @@ Route::get('/contact', function () {
 });
 
 Route::get('/maintenance', function () {
-    return view('about');
+    return view('blog');
 });
