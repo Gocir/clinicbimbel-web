@@ -24,3 +24,7 @@ Route::get('/contact', function () {
 Route::get('/maintenance', function () {
     return view('blog');
 });
+
+Route::get('/copyright', function () {
+    return view('presence');
+});
