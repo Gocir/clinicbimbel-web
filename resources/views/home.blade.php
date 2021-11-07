@@ -3,26 +3,29 @@
 @section('container')
     {{-- Jumbotron --}}
     <section class="cover-home">
-        <div class="jumbotron">
-            <div class="row p-3 m-auto">
-                <div class="col-xl-5 col-md-5 order-2 order-sm-0 m-auto">
-                    <div class="title-welcome text-light mb-4">
-                        <h1 class="fw-bold m-auto display-6">Belajar bersama Pengajar Profesional yang tepat untukmu</h1>
-                        <h6>Kami hadir untuk mencerdaskan bangsa, menciptakan generasi yang edukatif
-                            dan kreatif.</h6>
+        <div class="container">
+            <div class="jumbotron">
+                <div class="row py-4 m-auto">
+                    <div class="col-xl-5 col-md-5 order-2 order-sm-0 ms-md-4 my-auto">
+                        <div class="title-welcome text-light mb-4">
+                            <h1 class="fw-bold m-auto display-6">Belajar bersama Pengajar Profesional yang tepat untukmu</h1>
+                            <h6>Kami hadir untuk mencerdaskan bangsa, menciptakan generasi yang edukatif
+                                dan kreatif.</h6>
+                        </div>
+                        <div class="cta">
+                            <a class="btn btn-fb text-light me-lg-1" href="https://www.facebook.com/clinicbimbel/"
+                                role="button">Facebook</a>
+                            <a class="btn btn-ig text-light mx-lg-1" href="https://www.instagram.com/clinicbimbel/"
+                                role="button">Instagram</a>
+                            <a class="btn btn-wa text-light mx-lg-1" href="http://wa.me/6283101065180"
+                                role="button">WhatsApp</a>
+                            <a class="btn btn-yt text-light ms-lg-1"
+                                href="https://www.youtube.com/channel/UCuWJXJ1Tb1zewYcLOSQe5BQ" role="button">Youtube</a>
+                        </div>
                     </div>
-                    <div class="cta">
-                        <a class="btn btn-fb text-light me-lg-1" href="https://www.facebook.com/clinicbimbel/"
-                            role="button">Facebook</a>
-                        <a class="btn btn-ig text-light mx-lg-1" href="https://www.instagram.com/clinicbimbel/"
-                            role="button">Instagram</a>
-                        <a class="btn btn-wa text-light mx-lg-1" href="http://wa.me/6283101065180" role="button">WhatsApp</a>
-                        <a class="btn btn-yt text-light ms-lg-1"
-                            href="https://www.youtube.com/channel/UCuWJXJ1Tb1zewYcLOSQe5BQ" role="button">Youtube</a>
+                    <div class="col-xl-4 col-md-4 col-sm-5 order-1 order-sm-0 m-auto">
+                        <img src="/img/tentor.png" class="w-100" alt="">
                     </div>
-                </div>
-                <div class="col-xl-4 col-md-4 order-1 order-sm-0 m-auto">
-                    <img src="/img/tentor.png" class="w-100" alt="">
                 </div>
             </div>
         </div>
