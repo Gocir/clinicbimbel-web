@@ -56,8 +56,20 @@ hr {
     height: 100%;
 }
 
-.jumbotron-maintenance {
+.jumbotron-maintenance .row {
     height: 100%;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.form-select {
+    border-radius: 10px;
 }
 
 h1,
@@ -68,10 +80,6 @@ h4 {
 }
 
 .btn {
-    border-radius: 10px;
-}
-
-.form-control {
     border-radius: 10px;
 }
 
@@ -110,11 +118,6 @@ h4 {
         height: 100%;
     }
 
-    .jumbotron-maintenance {
-        height: 655px;
-        text-align: center;
-    }
-
     .cta .btn,
     .btn {
         border-radius: 8px;
@@ -149,6 +152,9 @@ h4 {
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    .jumbotron-maintenance {
+        text-align: center;
+    }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
@@ -177,23 +183,6 @@ h4 {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .cover-home {
-        height: 100%;
-    }
-
-    .cta .btn {
-        padding: 0.5rem 1rem;
-        font-size: 1.25rem;
-        line-height: 1.5;
-        border-radius: 1rem;
-    }
-
-    .map iframe {
-        height: 100%;
-    }
-}
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
     .cover-home {
         height: 100%;
@@ -204,7 +193,7 @@ h4 {
     }
 
     .jumbotron-maintenance {
-        height: 563px;
+        height: 600px;
     }
 
     .cta .btn,
