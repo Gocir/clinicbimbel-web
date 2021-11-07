@@ -79,7 +79,9 @@
     {{-- End of Content --}}
     {{-- Footer --}}
     <footer class="mt-auto text-center text-dark-50 py-3">
-        <p class="mb-0">&copy; 2021 Clinic Bimbel. All Rights Reserved</p>
+        <p class="mb-0"><a href="/copyright" class="text-dark text-decoration-none">&copy;</a> 2021 Clinic
+            Bimbel. All Rights
+            Reserved</p>
     </footer>
     {{-- End of Footer --}}
 
