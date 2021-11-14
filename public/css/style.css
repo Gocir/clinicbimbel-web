@@ -4,7 +4,7 @@ body {
     background-repeat: repeat, no-repeat;
     background-position: center top;
     background-attachment: fixed;
-    background-size: 25%, 100%;
+    background-size: 40%, 100%;
     font-family: "Lato", sans-serif;
     margin-top: 85px;
 }
@@ -159,9 +159,9 @@ h4 {
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-    .cover-home {
+    /* .cover-home {
         height: 1263px;
-    }
+    } */
 
     .cta .btn {
         padding: 0.5rem 1rem;
