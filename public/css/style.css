@@ -13,10 +13,6 @@ body {
     background-color: #185529;
 }
 
-.navbar-brand img {
-    width: 80px;
-}
-
 .btn-action {
     background-color: #ffc800;
     color: #185529;
@@ -131,10 +127,6 @@ h4 {
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .navbar-brand {
-        width: 140px;
-    }
-
     .nav-item .btn {
         display: none;
     }
@@ -159,10 +151,6 @@ h4 {
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-    /* .cover-home {
-        height: 1263px;
-    } */
-
     .cta .btn {
         padding: 0.5rem 1rem;
         font-size: 1.25rem;
@@ -188,10 +176,6 @@ h4 {
         height: 100%;
     }
 
-    .navbar-brand {
-        width: 200px;
-    }
-
     .jumbotron-maintenance {
         height: 600px;
     }
@@ -204,10 +188,6 @@ h4 {
 }
 
 @media only screen and (min-device-width: 1112px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    .navbar-brand {
-        width: 250px;
-    }
-
     .jumbotron-maintenance {
         height: 850px;
     }
