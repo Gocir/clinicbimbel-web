@@ -23,8 +23,8 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top border-bottom border-warning border-3 shadow"
             aria-label="Eleventh navbar example">
             <div class="container">
-                <a class="navbar-brand mx-lg-auto" href="/">
-                    <img src="/img/logo.svg" alt="">
+                <a class="navbar-brand" href="/">
+                    <img src="/img/logo.png" alt="">
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
