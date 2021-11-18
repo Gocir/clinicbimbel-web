@@ -60,7 +60,8 @@ hr {
     border-radius: 20px;
 }
 
-.form-control {
+.form-control,
+.input-group-text {
     border-radius: 10px;
 }
 
