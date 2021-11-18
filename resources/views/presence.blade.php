@@ -18,13 +18,15 @@
                                         min="getDate()">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="tutorNameSelect" class="form-label">Nama Tentor</label>
-                                    <select id="tutorNameSelect" class="form-select" required>
-                                        <option selected>Pilih Nama Tentor</option>
+                                    <label for="tentorList" class="form-label">Nama Tentor</label>
+                                    <input class="form-control" list="tentorListOptions" id="tentorList"
+                                        placeholder="Cari Nama Tentor..." required>
+                                    <datalist id="tentorListOptions">
                                         <option value="Bimbel">Bimbel</option>
                                         <option value="Adinda">Adinda</option>
                                         <option value="Adm Riska">Adm Riska</option>
                                         <option value="Adm Eni">Adm Eni</option>
+                                        <option value="Adm Sukma">Adm Sukma</option>
                                         <option value="Altri">Altri</option>
                                         <option value="Anisa">Anisa</option>
                                         <option value="Anggraeni">Anggraeni</option>
@@ -61,13 +63,13 @@
                                         <option value="Shofa">Shofa</option>
                                         <option value="Safira">Safira</option>
                                         <option value="Safira">Safira</option>
-                                    </select>
+                                    </datalist>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="studentNameSelect" class="form-label">Nama Siswa</label>
-                                    <select id="studentNameSelect" class="form-select" aria-describedby="studentNameHelp"
-                                        required>
-                                        <option selected>Pilih Nama Siswa</option>
+                                    <label for="studentList" class="form-label">Nama Siswa</label>
+                                    <input class="form-control" list="studentListOptions" id="studentList"
+                                        placeholder="Cari Nama Siswa..." required>
+                                    <datalist id="studentListOptions">
                                         <option value="Abyan">Abyan</option>
                                         <option value="Adeeva">Adeeva</option>
                                         <option value="Aira">Aira</option>
@@ -90,6 +92,7 @@
                                         <option value="Daffa & Daffi_Ngaji">Daffa & Daffi_Ngaji</option>
                                         <option value="Delisha">Delisha</option>
                                         <option value="Deta">Deta</option>
+                                        <option value="Dwi Lestari">Dwi Lestari</option>
                                         <option value="Fafa">Fafa</option>
                                         <option value="Fakhira">Fakhira</option>
                                         <option value="Fakhri">Fakhri</option>
@@ -123,6 +126,7 @@
                                         <option value="KE Hannan">KE Hannan</option>
                                         <option value="KE Nagam">KE Nagam</option>
                                         <option value="KE Navila dkk">KE Navila dkk</option>
+                                        <option value="KE Raisa">KE Raisa</option>
                                         <option value="KE Rayya">KE Rayya</option>
                                         <option value="KE Rizka">KE Rizka</option>
                                         <option value="KE Zaki">KE Zaki</option>
@@ -141,6 +145,7 @@
                                         <option value="Nadia">Nadia</option>
                                         <option value="Nasrul">Nasrul</option>
                                         <option value="Nataya">Nataya</option>
+                                        <option value="Prabaswara">Prabaswara</option>
                                         <option value="Raja">Raja</option>
                                         <option value="Risni">Risni</option>
                                         <option value="Rizma">Rizma</option>
@@ -151,6 +156,7 @@
                                         <option value="Shafiyya">Shafiyya</option>
                                         <option value="Shakila">Shakila</option>
                                         <option value="SP2_Aisya, Cintya">SP2_Aisya, Cintya</option>
+                                        <option value="SP2_Azalia, Sifa">SP2_Azalia, Sifa</option>
                                         <option value="SP2_Faza, Yolanda SAINTEK">SP2_Faza, Yolanda SAINTEK</option>
                                         <option value="SP2_Raka, Raya">SP2_Raka, Raya</option>
                                         <option value="SP3_Elvina, Kurnia, Rufaida">SP3_Elvina, Kurnia, Rufaida</option>
@@ -161,12 +167,14 @@
                                         <option value="SP4_Dellis dkk">SP4_Dellis dkk</option>
                                         <option value="SP4_Fina, Luthfiyyah, Naura, Tsania">SP4_Fina, Luthfiyyah, Naura,
                                             Tsania</option>
+                                        <option value="SP4_Mat, Rey, Salm, Zid">SP4_Mat, Rey, Salm, Zid</option>
                                         <option value="SP5_Bilqis, Jihan, Nabilah, Rosi, Safrina">SP5_Bilqis, Jihan,
                                             Nabilah, Rosi, Safrina</option>
                                         <option value="SP5_Faizul, Ikhsan, Najwa, Ryan, Sakna">SP5_Faizul, Ikhsan, Najwa,
                                             Ryan, Sakna</option>
                                         <option value="Surayah">Surayah</option>
                                         <option value="Syakila">Syakila</option>
+                                        <option value="Syarifah_Ngaji">Syarifah_Ngaji</option>
                                         <option value="Tuhfa">Tuhfa</option>
                                         <option value="Unggul">Unggul</option>
                                         <option value="Vay">Vay</option>
@@ -176,29 +184,48 @@
                                         <option value="Zahrakhan">Zahrakhan</option>
                                         <option value="Zahrotun">Zahrotun</option>
                                         <option value="Zulfan">Zulfan</option>
+                                    </datalist>
                                     </select>
                                     <div id="studentNameHelp" class="form-text">*Nama Siswa yang dipilih harus sesuai
                                         jadwal.
                                     </div>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="inputDuration" class="form-label">Durasi Mengajar</label>
-                                    <input type="number" class="form-control" id="inputDuration"
-                                        aria-describedby="durationHelp" placeholder="Contoh: 30" min="1" max="180" required>
-                                    <div id="durationHelp" class="form-text">*Durasi Mengajar dihitung dalam satuan
-                                        menit.</div>
+                                <div class="input-group flex-nowrap mb-3">
+                                    <input type="text" class="form-control" placeholder="Contoh: 30" aria-label="Duration"
+                                        aria-describedby="addon-wrapping">
+                                    <span class="input-group-text" id="addon-wrapping">menit</span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="levelSelect" class="form-label">Jenjang</label>
                                     <select id="levelSelect" class="form-select" required>
-                                        <option selected>Pilih Jenjang</option>
-                                        <option>TK</option>
-                                        <option>SD</option>
-                                        <option>SMP</option>
-                                        <option>SMA/K</option>
-                                        <option>UTBK/Dinas/Mandiri</option>
-                                        <option>Mahasiswa</option>
-                                        <option>TPQ</option>
+                                        <option value="" disabled selected>Pilih Jenjang</option>
+                                        <optgroup label="TK">
+                                            <option value="">Kelas 0</option>
+                                        </optgroup>
+                                        <optgroup label="SD">
+                                            <option value="">Kelas 1</option>
+                                            <option value="">Kelas 2</option>
+                                            <option value="">Kelas 3</option>
+                                            <option value="">Kelas 4</option>
+                                            <option value="">Kelas 5</option>
+                                            <option value="">Kelas 6</option>
+                                        </optgroup>
+                                        <optgroup label="SMP">
+                                            <option value="">Kelas 7</option>
+                                            <option value="">Kelas 8</option>
+                                            <option value="">Kelas 9</option>
+                                        </optgroup>
+                                        <optgroup label="SMA/K">
+                                            <option value="">Kelas 10</option>
+                                            <option value="">Kelas 11</option>
+                                            <option value="">Kelas 12</option>
+                                        </optgroup>
+                                        <optgroup label="UTBK/Dinas/Kuliah">
+                                            <option value="">Kelas 13</option>
+                                        </optgroup>
+                                        <optgroup label="Mengaji">
+                                            <option value="">Kelas 14</option>
+                                        </optgroup>
                                     </select>
                                 </div>
                                 <div class="mb-3">
