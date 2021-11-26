@@ -1,5 +1,5 @@
 @extends('base.main')
-
+@section('title', 'Presensi Tentor')
 @section('container')
     {{-- Jumbotron --}}
     <div class="container">
@@ -11,19 +11,20 @@
                             <h4>Presensi Bulan Juli-Desember</h4>
                         </div>
                         <div class="card-body">
-                            <form>
+                            <form
+                                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd7xX7rYtsrIQC05BAKwvCNc78AgL_JwInsXQpk1Hx7fgm5WQ/formResponse">
                                 <div class="mb-3">
                                     <label for="lessonDateSelect" class="form-label">Tanggal Les</label>
-                                    <input type="date" class="form-control" id="lessonDate" name="lessonDate"
-                                        min="getDate()">
+                                    <input type="date" class="form-control" id="lessonDate" name="entry.664744930">
                                 </div>
                                 <div class="mb-3">
                                     <label for="tentorList" class="form-label">Nama Tentor</label>
-                                    <input class="form-control" list="tentorListOptions" id="tentorList"
-                                        placeholder="Cari Nama Tentor..." required>
+                                    <input class="form-control" name="entry.733215749" list="tentorListOptions"
+                                        id="tentorList" placeholder="Cari Nama Tentor..." required>
                                     <datalist id="tentorListOptions">
                                         <option value="Bimbel">Bimbel</option>
                                         <option value="Adinda">Adinda</option>
+                                        <option value="Adm Dina">Adm Dina</option>
                                         <option value="Adm Riska">Adm Riska</option>
                                         <option value="Adm Eni">Adm Eni</option>
                                         <option value="Adm Sukma">Adm Sukma</option>
@@ -35,6 +36,7 @@
                                         <option value="Arina">Arina</option>
                                         <option value="Atta">Atta</option>
                                         <option value="Aulia">Aulia</option>
+                                        <option value="Dina">Dina</option>
                                         <option value="Erni">Erni</option>
                                         <option value="Faila">Faila</option>
                                         <option value="Fasya">Fasya</option>
@@ -67,8 +69,8 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="studentList" class="form-label">Nama Siswa</label>
-                                    <input class="form-control" list="studentListOptions" id="studentList"
-                                        placeholder="Cari Nama Siswa..." required>
+                                    <input class="form-control" name="entry.1566153838" list="studentListOptions"
+                                        id="studentList" placeholder="Cari Nama Siswa..." required>
                                     <datalist id="studentListOptions">
                                         <option value="Abyan">Abyan</option>
                                         <option value="Adeeva">Adeeva</option>
@@ -96,6 +98,7 @@
                                         <option value="Fafa">Fafa</option>
                                         <option value="Fakhira">Fakhira</option>
                                         <option value="Fakhri">Fakhri</option>
+                                        <option value="Farida">Farida</option>
                                         <option value="Farrel">Farrel</option>
                                         <option value="Fawnia">Fawnia</option>
                                         <option value="Gauri">Gauri</option>
@@ -126,6 +129,7 @@
                                         <option value="KE Hannan">KE Hannan</option>
                                         <option value="KE Nagam">KE Nagam</option>
                                         <option value="KE Navila dkk">KE Navila dkk</option>
+                                        <option value="KE Nur">KE Nur</option>
                                         <option value="KE Raisa">KE Raisa</option>
                                         <option value="KE Rayya">KE Rayya</option>
                                         <option value="KE Rizka">KE Rizka</option>
@@ -138,13 +142,17 @@
                                         <option value="M Risqi">M Risqi</option>
                                         <option value="M Reza">M Reza</option>
                                         <option value="Marshall">Marshall</option>
+                                        <option value="Muhammad">Muhammad</option>
                                         <option value="Mouri">Mouri</option>
                                         <option value="Mulya">Mulya</option>
                                         <option value="Nabihan">Nabihan</option>
                                         <option value="Nabihan_SD">Nabihan_SD</option>
                                         <option value="Nadia">Nadia</option>
+                                        <option value="Naira Maulida">Naira Maulida</option>
                                         <option value="Nasrul">Nasrul</option>
+                                        <option value="Naswa Rizqi">Naswa Rizqi</option>
                                         <option value="Nataya">Nataya</option>
+                                        <option value="Navila">Navila</option>
                                         <option value="Prabaswara">Prabaswara</option>
                                         <option value="Raja">Raja</option>
                                         <option value="Risni">Risni</option>
@@ -155,9 +163,12 @@
                                         <option value="Shabrina">Shabrina</option>
                                         <option value="Shafiyya">Shafiyya</option>
                                         <option value="Shakila">Shakila</option>
+                                        <option value="Salwa Rizqi">Salwa Rizqi</option>
                                         <option value="SP2_Aisya, Cintya">SP2_Aisya, Cintya</option>
+                                        <option value="SP2_Afna, Talitha">SP2_Afna, Talitha</option>
                                         <option value="SP2_Azalia, Sifa">SP2_Azalia, Sifa</option>
                                         <option value="SP2_Faza, Yolanda SAINTEK">SP2_Faza, Yolanda SAINTEK</option>
+                                        <option value="SP2_Naura & Nayla">SP2_Naura & Nayla</option>
                                         <option value="SP2_Raka, Raya">SP2_Raka, Raya</option>
                                         <option value="SP3_Elvina, Kurnia, Rufaida">SP3_Elvina, Kurnia, Rufaida</option>
                                         <option value="SP3_Fadhil, Najwa, Naurah">SP3_Fadhil, Najwa, Naurah</option>
@@ -175,6 +186,7 @@
                                         <option value="Surayah">Surayah</option>
                                         <option value="Syakila">Syakila</option>
                                         <option value="Syarifah_Ngaji">Syarifah_Ngaji</option>
+                                        <option value="Syifa">Syifa</option>
                                         <option value="Tuhfa">Tuhfa</option>
                                         <option value="Unggul">Unggul</option>
                                         <option value="Vay">Vay</option>
@@ -190,60 +202,72 @@
                                         jadwal.
                                     </div>
                                 </div>
-                                <div class="input-group flex-nowrap mb-3">
-                                    <input type="text" class="form-control" placeholder="Contoh: 30" aria-label="Duration"
-                                        aria-describedby="addon-wrapping">
-                                    <span class="input-group-text" id="addon-wrapping">menit</span>
+                                <div class="mb-3">
+                                    <label for="inputDuration" class="form-label">Durasi Les</label>
+                                    <div class="input-group flex-nowrap">
+                                        <input type="number" name="entry.606126148" class="form-control"
+                                            placeholder="Contoh: 30" aria-label="Duration" min="1" max="180"
+                                            aria-describedby="addon-wrapping" required>
+                                        <span class="input-group-text" id="addon-wrapping">menit</span>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="levelSelect" class="form-label">Jenjang</label>
-                                    <select id="levelSelect" class="form-select" required>
-                                        <option value="" disabled selected>Pilih Jenjang</option>
-                                        <optgroup label="TK">
-                                            <option value="">Kelas 0</option>
-                                        </optgroup>
-                                        <optgroup label="SD">
-                                            <option value="">Kelas 1</option>
-                                            <option value="">Kelas 2</option>
-                                            <option value="">Kelas 3</option>
-                                            <option value="">Kelas 4</option>
-                                            <option value="">Kelas 5</option>
-                                            <option value="">Kelas 6</option>
-                                        </optgroup>
-                                        <optgroup label="SMP">
-                                            <option value="">Kelas 7</option>
-                                            <option value="">Kelas 8</option>
-                                            <option value="">Kelas 9</option>
-                                        </optgroup>
-                                        <optgroup label="SMA/K">
-                                            <option value="">Kelas 10</option>
-                                            <option value="">Kelas 11</option>
-                                            <option value="">Kelas 12</option>
-                                        </optgroup>
-                                        <optgroup label="UTBK/Dinas/Kuliah">
-                                            <option value="">Kelas 13</option>
-                                        </optgroup>
-                                        <optgroup label="Mengaji">
-                                            <option value="">Kelas 14</option>
-                                        </optgroup>
+                                    <label for="inputJenjang" class="form-label">Jenjang</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="entry.229765173" id="flexRadioTK"
+                                            value="TK">
+                                        <label class="form-check-label" for="flexRadioTK">TK</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="entry.229765173" id="flexRadioSD"
+                                            value="SD">
+                                        <label class="form-check-label" for="flexRadioSD">SD</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="entry.229765173"
+                                            id="flexRadioSMP" value="SMP">
+                                        <label class="form-check-label" for="flexRadioSMP">SMP</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="entry.229765173"
+                                            id="flexRadioSMA" value="SMA">
+                                        <label class="form-check-label" for="flexRadioSMA">SMA/K</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="entry.229765173"
+                                            id="flexRadioUTBK" value="UTBK/Dinas/Kuliah/Mandiri">
+                                        <label class="form-check-label"
+                                            for="flexRadioUTBK">UTBK/Dinas/Kuliah/Mandiri</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="entry.229765173"
+                                            id="flexRadioMengaji" value="Ngaji">
+                                        <label class="form-check-label" for="flexRadioMengaji">Mengaji</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="classSelect" class="form-label">Kelas</label>
+                                    <select id="classSelect" class="form-select" name="entry.85848459" required>
+                                        <option name="name" value="1" disabled selected>Pilih Jenjang</option>
                                     </select>
                                 </div>
                                 <div class="mb-3">
                                     <label for="inputSubject" class="form-label">Mata Pelajaran</label>
-                                    <input type="text" class="form-control" id="inputSubject"
+                                    <input type="text" name="entry.1536804292" class="form-control" id="inputSubject"
                                         aria-describedby="subjectHelp" placeholder="Contoh: Bahasa Inggris" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="inputMaterial" class="form-label">Materi</label>
-                                    <input type="text" class="form-control" id="inputMaterial"
+                                    <input type="text" name="entry.1647132480" class="form-control" id="inputMaterial"
                                         aria-describedby="materialHelp" placeholder="Contoh: Aljabar Linier" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="inputAdditionalReport" class="form-label">Laporan Tambahan</label>
-                                    <textarea class="form-control" id="FormControlTextarea" rows="3"
-                                        placeholder="Jika ada uang yang dititipkan, mohon tuliskan nama siswa dan jumlah uang yang dititipkan."></textarea>
+                                    <textarea class="form-control" name="entry.1311512187" id="FormControlTextarea"
+                                        rows="3"
+                                        placeholder="Tuliskan Nama Siswa dan Jumlah Uang, apabila ada yang menitipkan."></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-action fw-bold">Submit</button>
+                                <button type="submit" name="dlut" class="btn btn-action fw-bold">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -252,4 +276,114 @@
         </section>
     </div>
     {{-- End of Jumbotron --}}
+    <script>
+        var listTK = [{
+            name: 'Kelas 0',
+            value: '0'
+        }];
+
+        var listSD = [{
+            name: 'Kelas 1',
+            value: '1'
+        }, {
+            name: 'Kelas 2',
+            value: '2'
+        }, {
+            name: 'Kelas 3',
+            value: '3'
+        }, {
+            name: 'Kelas 4',
+            value: '4'
+        }, {
+            name: 'Kelas 5',
+            value: '5'
+        }, {
+            name: 'Kelas 6',
+            value: '6'
+        }];
+
+        var listSMP = [{
+            name: 'Kelas 7',
+            value: '7'
+        }, {
+            name: 'Kelas 8',
+            value: '8'
+        }, {
+            name: 'Kelas 9',
+            value: '9'
+        }];
+
+        var listSMA = [{
+            name: 'Kelas 10',
+            value: '10'
+        }, {
+            name: 'Kelas 11',
+            value: '11'
+        }, {
+            name: 'Kelas 12',
+            value: '12'
+        }];
+
+        var listKuliah = [{
+            name: 'Kelas 13',
+            value: '13'
+        }];
+
+        var listNgaji = [{
+            name: 'Kelas 14',
+            value: '14'
+        }, {
+            name: 'Kelas 15',
+            value: '15'
+        }];
+
+        $(document).ready(function() {
+            $("input[name='entry.229765173']").on('change', function() {
+
+                if ($(this).is(':checked') && $(this).val() == 'TK') {
+                    $('#classSelect').empty()
+                    $.each(listTK, function(index, value) {
+                        $('#classSelect').append('<option value="' + value.value + '">' + value
+                            .name +
+                            '</option>');
+                    });
+                } else if ($(this).is(':checked') && $(this).val() == 'SD') {
+                    $('#classSelect').empty()
+                    $.each(listSD, function(index, value) {
+                        $('#classSelect').append('<option value="' + value.value + '">' + value
+                            .name +
+                            '</option>');
+                    });
+                } else if ($(this).is(':checked') && $(this).val() == 'SMP') {
+                    $('#classSelect').empty()
+                    $.each(listSMP, function(index, value) {
+                        $('#classSelect').append('<option value="' + value.value + '">' + value
+                            .name +
+                            '</option>');
+                    });
+                } else if ($(this).is(':checked') && $(this).val() == 'SMA') {
+                    $('#classSelect').empty()
+                    $.each(listSMA, function(index, value) {
+                        $('#classSelect').append('<option value="' + value.value + '">' + value
+                            .name +
+                            '</option>');
+                    });
+                } else if ($(this).is(':checked') && $(this).val() == 'UTBK/Dinas/Kuliah/Mandiri') {
+                    $('#classSelect').empty()
+                    $.each(listKuliah, function(index, value) {
+                        $('#classSelect').append('<option value="' + value.value + '">' + value
+                            .name +
+                            '</option>');
+                    });
+                } else if ($(this).is(':checked') && $(this).val() == 'Ngaji') {
+                    $('#classSelect').empty()
+                    $.each(listNgaji, function(index, value) {
+                        $('#classSelect').append('<option value="' + value.value + '">' + value
+                            .name +
+                            '</option>');
+                    });
+                } else {}
+            });
+        });
+    </script>
 @endsection
