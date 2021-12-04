@@ -64,7 +64,6 @@
                                         <option value="Shania">Shania</option>
                                         <option value="Shofa">Shofa</option>
                                         <option value="Safira">Safira</option>
-                                        <option value="Safira">Safira</option>
                                     </datalist>
                                 </div>
                                 <div class="mb-3">
@@ -94,6 +93,7 @@
                                         <option value="Daffa & Daffi_Ngaji">Daffa & Daffi_Ngaji</option>
                                         <option value="Delisha">Delisha</option>
                                         <option value="Deta">Deta</option>
+                                        <option value="Desy">Desy</option>
                                         <option value="Dwi Lestari">Dwi Lestari</option>
                                         <option value="Fafa">Fafa</option>
                                         <option value="Fakhira">Fakhira</option>
@@ -110,6 +110,7 @@
                                         <option value="Isca">Isca</option>
                                         <option value="Kayana">Kayana</option>
                                         <option value="Kindo">Kindo</option>
+                                        <option value="KI Karasyifa">KI Malika</option>
                                         <option value="KI Malika">KI Malika</option>
                                         <option value="KI Naura">KI Naura</option>
                                         <option value="KI Saintek">KI Saintek</option>
@@ -152,6 +153,7 @@
                                         <option value="Nasrul">Nasrul</option>
                                         <option value="Naswa Rizqi">Naswa Rizqi</option>
                                         <option value="Nataya">Nataya</option>
+                                        <option value="Naufal El">Naufal El</option>
                                         <option value="Navila">Navila</option>
                                         <option value="Prabaswara">Prabaswara</option>
                                         <option value="Raja">Raja</option>
@@ -241,8 +243,13 @@
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="entry.229765173"
-                                            id="flexRadioMengaji" value="Ngaji">
-                                        <label class="form-check-label" for="flexRadioMengaji">Mengaji</label>
+                                            id="flexRadioMengajiA" value="NGAJI A">
+                                        <label class="form-check-label" for="flexRadioMengajiA">Mengaji A</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="entry.229765173"
+                                            id="flexRadioMengajiB" value="NGAJI B">
+                                        <label class="form-check-label" for="flexRadioMengajiB">Mengaji B</label>
                                     </div>
                                 </div>
                                 <div class="mb-3">
@@ -267,7 +274,7 @@
                                         rows="3"
                                         placeholder="Tuliskan Nama Siswa dan Jumlah Uang, apabila ada yang menitipkan."></textarea>
                                 </div>
-                                <button type="submit" name="dlut" class="btn btn-action fw-bold">Submit</button>
+                                <button type="submit" class="btn btn-action fw-bold">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -329,10 +336,12 @@
             value: '13'
         }];
 
-        var listNgaji = [{
+        var listNgajiA = [{
             name: 'Kelas 14',
             value: '14'
-        }, {
+        }];
+
+        var listNgajiB = [{
             name: 'Kelas 15',
             value: '15'
         }];
@@ -375,9 +384,16 @@
                             .name +
                             '</option>');
                     });
-                } else if ($(this).is(':checked') && $(this).val() == 'Ngaji') {
+                } else if ($(this).is(':checked') && $(this).val() == 'NGAJI A') {
                     $('#classSelect').empty()
-                    $.each(listNgaji, function(index, value) {
+                    $.each(listNgajiA, function(index, value) {
+                        $('#classSelect').append('<option value="' + value.value + '">' + value
+                            .name +
+                            '</option>');
+                    });
+                } else if ($(this).is(':checked') && $(this).val() == 'NGAJI B') {
+                    $('#classSelect').empty()
+                    $.each(listNgajiB, function(index, value) {
                         $('#classSelect').append('<option value="' + value.value + '">' + value
                             .name +
                             '</option>');
